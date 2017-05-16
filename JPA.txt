@@ -1,0 +1,74 @@
+JPA
+
+一.JPA是什么
+Java Persisitence API：用于持久化对象的API
+JavaEE 5.0平台标准的ORM规范，使得应用程序以统一的方式访问持久层
+JPA和HIbernate的关系：
+JPA是ORM规范
+Hibernate是实现
+
+二.JPA技术要掌握哪些方面
+1）ORM映射元数据：JDK 5.0注解、XML；
+2）JPA的API；
+3）查询语言（JAQL）。
+
+三.开发步骤
+
+四.代码编写步骤
+
+五.注解
+1）@Entity：指定该类为属性类，会被映射成数据库表；
+2）@Table：指定属性生成数据库表的情况，用在主键列，可以通过table来生成主键
+3）@Id：指定该属性为数据库主键
+4）@GeneratedValue：指定生成主键策略
+5）@Column：属性映射成数据库列的情况
+6）@Basic：属性类中默认的基本注释
+7）@Transient：指定该属性不需要映射成数据库的一列；
+8）@TemporalType：指定时间精确格式
+
+六.API
+1.Persitence
+  createEntityManagerFactory(persistenceUnitName, properties);
+  createEntityManagerFactory(persistenceUnitName);
+2.EntityManagerFactory
+  createEntityManager();
+  close();
+3.EntityManager
+  find()
+  getReference()
+  persist()
+  remove()
+  merger()
+  flush()
+  reflush()
+4.EntityTransaction
+  begin()
+  commit()
+  rollback()
+  isActive()
+
+七.关联关系
+  单向1-N
+  单向N-1
+  双向1-N
+  双向1-1
+  双向N-N
+  
+八.二级缓存
+1.添加Jar包；
+2.添加配置文件；
+3.配置persistence.xml
+  <property name="hibernate.cache.use_second_level_cache" value="true"/>
+  <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
+  <property name="hibernate.cache.use_query_cache" value="true"/>
+4.实体类上加@Cacheable(true)
+
+九.Query查询
+   Query
+   NamedQuery
+   NativeQuery
+   			
+			
+  
+  
+	
