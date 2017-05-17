@@ -1,32 +1,27 @@
 JPA
 
-Ò».JPAÊÇÊ²Ã´
-Java Persisitence API£ºÓÃÓÚ³Ö¾Ã»¯¶ÔÏóµÄAPI
-JavaEE 5.0Æ½Ì¨±ê×¼µÄORM¹æ·¶£¬Ê¹µÃÓ¦ÓÃ³ÌÐòÒÔÍ³Ò»µÄ·½Ê½·ÃÎÊ³Ö¾Ã²ã
-JPAºÍHIbernateµÄ¹ØÏµ£º
-JPAÊÇORM¹æ·¶
-HibernateÊÇÊµÏÖ
+Hibernateæ˜¯å®žçŽ°
 
-¶þ.JPA¼¼ÊõÒªÕÆÎÕÄÄÐ©·½Ãæ
-1£©ORMÓ³ÉäÔªÊý¾Ý£ºJDK 5.0×¢½â¡¢XML£»
-2£©JPAµÄAPI£»
-3£©²éÑ¯ÓïÑÔ£¨JAQL£©¡£
+äºŒ.JPAæŠ€æœ¯è¦æŽŒæ¡å“ªäº›æ–¹é¢
+1ï¼‰ORMæ˜ å°„å…ƒæ•°æ®ï¼šJDK 5.0æ³¨è§£ã€XMLï¼›
+2ï¼‰JPAçš„APIï¼›
+3ï¼‰æŸ¥è¯¢è¯­è¨€ï¼ˆJAQLï¼‰ã€‚
 
-Èý.¿ª·¢²½Öè
+ä¸‰.å¼€å‘æ­¥éª¤
 
-ËÄ.´úÂë±àÐ´²½Öè
+å››.ä»£ç ç¼–å†™æ­¥éª¤
 
-Îå.×¢½â
-1£©@Entity£ºÖ¸¶¨¸ÃÀàÎªÊôÐÔÀà£¬»á±»Ó³Éä³ÉÊý¾Ý¿â±í£»
-2£©@Table£ºÖ¸¶¨ÊôÐÔÉú³ÉÊý¾Ý¿â±íµÄÇé¿ö£¬ÓÃÔÚÖ÷¼üÁÐ£¬¿ÉÒÔÍ¨¹ýtableÀ´Éú³ÉÖ÷¼ü
-3£©@Id£ºÖ¸¶¨¸ÃÊôÐÔÎªÊý¾Ý¿âÖ÷¼ü
-4£©@GeneratedValue£ºÖ¸¶¨Éú³ÉÖ÷¼ü²ßÂÔ
-5£©@Column£ºÊôÐÔÓ³Éä³ÉÊý¾Ý¿âÁÐµÄÇé¿ö
-6£©@Basic£ºÊôÐÔÀàÖÐÄ¬ÈÏµÄ»ù±¾×¢ÊÍ
-7£©@Transient£ºÖ¸¶¨¸ÃÊôÐÔ²»ÐèÒªÓ³Éä³ÉÊý¾Ý¿âµÄÒ»ÁÐ£»
-8£©@TemporalType£ºÖ¸¶¨Ê±¼ä¾«È·¸ñÊ½
+äº”.æ³¨è§£
+1ï¼‰@Entityï¼šæŒ‡å®šè¯¥ç±»ä¸ºå±žæ€§ç±»ï¼Œä¼šè¢«æ˜ å°„æˆæ•°æ®åº“è¡¨ï¼›
+2ï¼‰@Tableï¼šæŒ‡å®šå±žæ€§ç”Ÿæˆæ•°æ®åº“è¡¨çš„æƒ…å†µï¼Œç”¨åœ¨ä¸»é”®åˆ—ï¼Œå¯ä»¥é€šè¿‡tableæ¥ç”Ÿæˆä¸»é”®
+3ï¼‰@Idï¼šæŒ‡å®šè¯¥å±žæ€§ä¸ºæ•°æ®åº“ä¸»é”®
+4ï¼‰@GeneratedValueï¼šæŒ‡å®šç”Ÿæˆä¸»é”®ç­–ç•¥
+5ï¼‰@Columnï¼šå±žæ€§æ˜ å°„æˆæ•°æ®åº“åˆ—çš„æƒ…å†µ
+6ï¼‰@Basicï¼šå±žæ€§ç±»ä¸­é»˜è®¤çš„åŸºæœ¬æ³¨é‡Š
+7ï¼‰@Transientï¼šæŒ‡å®šè¯¥å±žæ€§ä¸éœ€è¦æ˜ å°„æˆæ•°æ®åº“çš„ä¸€åˆ—ï¼›
+8ï¼‰@TemporalTypeï¼šæŒ‡å®šæ—¶é—´ç²¾ç¡®æ ¼å¼
 
-Áù.API
+å…­.API
 1.Persitence
   createEntityManagerFactory(persistenceUnitName, properties);
   createEntityManagerFactory(persistenceUnitName);
@@ -47,23 +42,23 @@ HibernateÊÇÊµÏÖ
   rollback()
   isActive()
 
-Æß.¹ØÁª¹ØÏµ
-  µ¥Ïò1-N
-  µ¥ÏòN-1
-  Ë«Ïò1-N
-  Ë«Ïò1-1
-  Ë«ÏòN-N
+ä¸ƒ.å…³è”å…³ç³»
+  å•å‘1-N
+  å•å‘N-1
+  åŒå‘1-N
+  åŒå‘1-1
+  åŒå‘N-N
   
-°Ë.¶þ¼¶»º´æ
-1.Ìí¼ÓJar°ü£»
-2.Ìí¼ÓÅäÖÃÎÄ¼þ£»
-3.ÅäÖÃpersistence.xml
+å…«.äºŒçº§ç¼“å­˜
+1.æ·»åŠ JaråŒ…ï¼›
+2.æ·»åŠ é…ç½®æ–‡ä»¶ï¼›
+3.é…ç½®persistence.xml
   <property name="hibernate.cache.use_second_level_cache" value="true"/>
   <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.EhCacheRegionFactory"/>
   <property name="hibernate.cache.use_query_cache" value="true"/>
-4.ÊµÌåÀàÉÏ¼Ó@Cacheable(true)
+4.å®žä½“ç±»ä¸ŠåŠ @Cacheable(true)
 
-¾Å.Query²éÑ¯
+ä¹.QueryæŸ¥è¯¢
    Query
    NamedQuery
    NativeQuery
